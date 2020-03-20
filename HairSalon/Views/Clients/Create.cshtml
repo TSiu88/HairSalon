@@ -7,17 +7,19 @@
 <h4>Add a New Client</h4>
 @using (Html.BeginForm())
 {
-  @Html.Label("Client Name")
-  @Html.TextBoxFor(model => model.ClientName, new { @required = "required"})
+  <div class="form">
+    @Html.Label("Client Name")
+    @Html.TextBoxFor(model => model.ClientName, new { @required = "required"})
 
-  
-  @Html.Label("Phone Number (numbers only)")
-  @Html.TextBoxFor(model => model.PhoneNumber, new { @type="number", @max="9999999999"})
+    
+    @Html.Label("Phone Number (numbers only)")
+    @Html.TextBoxFor(model => model.PhoneNumber, new { @type="number", @max="9999999999"})
 
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
-  <input type="submit" value="Add Client" class="btn btn-default"/>
-  @Html.HiddenFor(model => model.Stylist)
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
+    @Html.HiddenFor(model => model.Stylist)
+    <input type="submit" value="Add Client" class="btn btn-default"/>
+  </div>
 }
 <div id="footer">
   <p>

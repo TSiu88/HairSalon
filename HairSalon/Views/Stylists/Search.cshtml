@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+@using HairSalon.Models;
+@model HairSalon.Models.Stylist;
+
+<h2>Search Stylists</h2>
+
+<div class="form">
+  @using (Html.BeginForm("SearchResults", "Stylists", FormMethod.Post))
+  {
+    @Html.Label("Search by Name")
+    @Html.TextBoxFor(Model => Model.StylistName)
+    <br>
+    <input class="btn btn-default" type="submit", value="Find Stylist" />
+  }
+</div>
+
+<p>@Html.ActionLink("Cancel", "Index")</p>
+
+<div id="footer">
+  <p>
+    @Html.ActionLink("Return Home", "Index", "Home")
+  </p>
+</div>

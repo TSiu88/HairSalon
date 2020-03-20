@@ -73,5 +73,20 @@ namespace HairSalon.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+    public ActionResult Search()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public ActionResult SearchResults(Client searchClient)
+    {
+    string searchCriteria = searchClient.ClientName.ToUpper();
+    List<Client> allModels = _db.Clients.ToList();
+    List<Client> foundModels = new List <Client>{};
+    foundModels = allModels.FindAll(client => client.ClientName.ToUpper() == searchCriteria);
+    return View(foundModels);  
+    }
   }
 }

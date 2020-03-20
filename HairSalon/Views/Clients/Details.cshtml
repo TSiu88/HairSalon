@@ -12,19 +12,12 @@
 {
   <h3>Phone Number: N/A</h3>
 }
-
-@* if(@Int32.TryParse(Model.PhoneNumber, out value) == false)
-{
-  <h3>Phone Number: N/A</h3>
-} *@
 else
 {
   <h3>Phone Number: @Html.DisplayFor(model => model.PhoneNumber)</h3>
 }
 
 <h3>Stylist: @Html.DisplayFor(model => model.Stylist.StylistName)</h3>
-
-
 
 <div id="footer">
   <p>

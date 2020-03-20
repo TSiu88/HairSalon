@@ -10,6 +10,7 @@
 
 @using (Html.BeginForm())
 {
+  <div class="form">
     @Html.HiddenFor(model => model.ClientId)
 
     @Html.LabelFor(model => model.ClientName)
@@ -21,9 +22,10 @@
     @Html.LabelFor(model => model.Stylist)
     @Html.DropDownList("StylistId")
 
-    <input type="submit" value="Save" />
+    <input class="btn btn-default" type="submit" value="Save" />
+  </div>
 }
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Cancel", "Index")</p>
 
 <div id="footer">
   <p>

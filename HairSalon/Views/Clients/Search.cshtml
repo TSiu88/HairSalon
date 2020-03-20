@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+@using HairSalon.Models;
+@model HairSalon.Models.Client;
+
+<h2>Search Clients</h2>
+
+<div class="form">
+  @using (Html.BeginForm("SearchResults", "Clients", FormMethod.Post))
+  {
+    @Html.Label("Search by Name")
+    @Html.TextBoxFor(Model => Model.ClientName)
+    <br>
+    <input class="btn btn-default" type="submit", value="Find client" />
+  }
+</div>
+
+<p>@Html.ActionLink("Cancel", "Index")</p>
+
+<div id="footer">
+  <p>
+    @Html.ActionLink("Return Home", "Index", "Home")
+  </p>
+</div>

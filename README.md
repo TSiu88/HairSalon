@@ -4,9 +4,7 @@
 
 #### By _**Tiffany Siu**_
 
-<!-- [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive) -->
-<!-- [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) -->
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 ![LastCommit](https://img.shields.io/github/last-commit/tsiu88/HairSalon)
 ![Languages](https://img.shields.io/github/languages/top/tsiu88/HairSalon)
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
@@ -28,8 +26,9 @@
 ---
 ## Description
 
-_README under construction_
-<!-- _Detailed desc w/ purpose/usage, what does, motivation to create, why exists, other info for users/developers to have_ -->
+This application is the Week 11 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  This application was made to show using the MVC file structure, Entity Framework, and MySQL database to make objects within objects with a one-to-many relationship.
+
+This web application allows a user, the owner of the Salon, to manage her employees (stylists) and their clients.  This keeps a list of stylists that are currently working at the salon and a list of their clients within each stylist.  It also keeps some information on each of the parties involved like everyone's name.  The application allows the user to add stylists and clients onto the lists and edit or delete entries as needed.
 
 ## Setup/Installation Requirements
 
@@ -60,7 +59,7 @@ _This program also makes use of SQL databases. We recommend using MySQL Workbenc
     CREATE DATABASE tiffany_siu;
     USE tiffany_siu;
     CREATE TABLE stylists (stylistId serial PRIMARY KEY, stylistName VARCHAR(255), specialty VARCHAR(255));
-    CREATE TABLE clients (clientId serial PRIMARY KEY, clientName VARCHAR(255), phoneNumber VARCHAR(10), stylistId INT);
+    CREATE TABLE clients (clientId serial PRIMARY KEY, clientName VARCHAR(255), phoneNumber VARCHAR(15), stylistId INT);
 7. Run `dotnet restore` and `dotnet build` in command line interface of the repository's main project directory
 8. Run `dotnet run` to start up the program in the command line interface
 9. Type the URL listed under "Now listening on:" into a web browser to run

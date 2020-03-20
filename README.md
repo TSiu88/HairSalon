@@ -73,7 +73,7 @@ _This program also makes use of SQL databases. We recommend using MySQL Workbenc
 * _Markdown_
 
 ## Notable Features
-<!-- _features that make project stand out_ -->
+This application is able to search, edit, and delete objects and return the search results as a link to see details on the search results found.
 
 ## Specifications
 
@@ -99,15 +99,21 @@ _This program also makes use of SQL databases. We recommend using MySQL Workbenc
 
 ## Screenshots
 
-<!-- _Here is a snippet of what the input looks like:_
+_Here is a snippet of what the homepage looks like:_
 
-![Snippet of input fields](img/snippet1.png)
+<img src="./Hairsalon/wwwroot/img/snippet1.png" alt="Homepage">
 
-_Here is a preview of what the output looks like:_
+_Here is a preview of what the stylist list page looks like:_
 
-![Snippet of output box](img/snippet2.png) -->
+<img src="./Hairsalon/wwwroot/img/snippet2.png" alt="Stylist List">
 
-<!-- _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_ -->
+_Here is a preview of what the stylist details look like:_
+
+<img src="./Hairsalon/wwwroot/img/snippet3.png" alt="Stylist details">
+
+_Here is a preview of what the client list page looks like:_
+
+<img src="./Hairsalon/wwwroot/img/snippet4.png" alt="Client list">
 
 ## Known Bugs
 

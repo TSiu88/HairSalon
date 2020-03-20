@@ -10,8 +10,9 @@
   @Html.Label("Client Name")
   @Html.TextBoxFor(model => model.ClientName, new { @required = "required"})
 
+  
   @Html.Label("Phone Number (numbers only)")
-  @Html.TextBoxFor(model => model.PhoneNumber)
+  @Html.TextBoxFor(model => model.PhoneNumber, new { @type="number", @max="9999999999"})
 
   @Html.LabelFor(model => model.Stylist)
   @Html.DropDownList("StylistId")

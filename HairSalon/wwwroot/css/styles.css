@@ -1,9 +1,83 @@
+body {
+  background: url("../img/background.jpg") center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 */
+} 
+
+h1 {
+  color: #803cb5;
+  font-family: 'Courgette', cursive;
+  font-size: 45pt;
+  text-shadow: 1px 1px black
+}
+
+h2{
+  color: #7895e3;
+  font-size: 30pt;
+  font-family: 'Courgette', cursive;
+}
+
+h3, h4 {
+  font-size: 25pt;
+  color: #52b37c;
+}
+
+label {
+  color: #328fa8;
+  font-size: 14pt;
+}
+
+a {
+  text-decoration: underline;
+}
+
+ul, li ::marker {
+  list-style-position: inside;
+  color: #6d75d1;
+}
+
+li {
+  font-size: 18pt;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+  min-height: 60vh;
+  border: 2px solid black;
+  background: rgb(204, 204, 204);
+  background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 60px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: #ca71e3;
+}
+
+.clientName {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
 div#footer {
   position:fixed;
   bottom:0px;
   left:0px;
   width:100%;
   color:#CCC;
-  background:#333;
+  background:rgba(17, 70, 55, 0.8);
   padding:8px;
+  text-align: center;
+  font-size: 14pt;
 }

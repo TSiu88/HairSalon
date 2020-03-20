@@ -23,6 +23,14 @@ else
 }
 
 <h3>Stylist: @Html.DisplayFor(model => model.Stylist.StylistName)</h3>
-<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Back to list", "Index")</p>
+
+
+
+<div id="footer">
+  <p>
+    @Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId }) | 
+    @Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId }) | 
+    @Html.ActionLink("Back to list", "Index") | 
+    @Html.ActionLink("Return Home", "Index", "Home")
+  </p>
+</div>

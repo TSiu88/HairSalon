@@ -10,6 +10,7 @@
 
 @using (Html.BeginForm())
 {
+  <div class="form">
     @Html.HiddenFor(model => model.StylistId)
 
     @Html.Label("Name")
@@ -19,5 +20,12 @@
     @Html.EditorFor(model => model.Specialty)
 
     <input type="submit" value="Save" />
+  </div>
 }
 <p>@Html.ActionLink("Cancel", "Index")</p>
+
+<div id="footer">
+  <p>
+    @Html.ActionLink("Return Home", "Index", "Home")
+  </p>
+</div>

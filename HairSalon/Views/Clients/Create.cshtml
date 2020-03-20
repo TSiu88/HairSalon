@@ -19,6 +19,10 @@
   <input type="submit" value="Add Client" class="btn btn-default"/>
   @Html.HiddenFor(model => model.Stylist)
 }
-<p>@Html.ActionLink("Return to Client List", "Index")</p>
-<p>@Html.ActionLink("Return to Stylist List", "Index", "Stylists")</p>
-<p>@Html.ActionLink("Return Home", "Index", "Home")</p>
+<div id="footer">
+  <p>
+    @Html.ActionLink("Return to Client List", "Index") |
+    @Html.ActionLink("Return to Stylist List", "Index", "Stylists") |
+    @Html.ActionLink("Return Home", "Index", "Home")
+  </p>
+</div>

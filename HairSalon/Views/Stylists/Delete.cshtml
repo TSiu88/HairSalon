@@ -9,6 +9,14 @@
 <h4>Name: @Html.DisplayFor(model => model.StylistName)</h4>
 @using (Html.BeginForm())
 {
+  <div class="form">
     <input type="submit" value="Delete" />
+  </div>  
 }
 @Html.ActionLink("Cancel", "Index")
+
+<div id="footer">
+  <p>
+    @Html.ActionLink("Return Home", "Index", "Home")
+  </p>
+</div>

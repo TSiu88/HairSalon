@@ -24,7 +24,7 @@ namespace HairSalon.Controllers
 
     public ActionResult Create()
     {
-      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
       return View();
     }
 
@@ -39,13 +39,15 @@ namespace HairSalon.Controllers
     public ActionResult Details(int id)
     {
       Client thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
+      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylists => stylists.StylistId == thisClient.StylistId);
+      ViewBag.StylistName = thisStylist.StylistName;
       return View(thisClient);
     }
 
     public ActionResult Edit(int id)
     {
       var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
-      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
       return View(thisClient);
     }
 

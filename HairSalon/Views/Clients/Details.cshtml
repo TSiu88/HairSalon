@@ -2,11 +2,27 @@
   Layout = "_Layout";
 }
 
+@using System
 @model HairSalon.Models.Client
 
 <h2>Client Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.ClientName): @Html.DisplayFor(model => model.ClientName)<h3>
+<h3>Name: @Html.DisplayFor(model => model.ClientName)</h3>
+@if(Model.PhoneNumber == null)
+{
+  <h3>Phone Number: N/A</h3>
+}
+
+@* if(@Int32.TryParse(Model.PhoneNumber, out value) == false)
+{
+  <h3>Phone Number: N/A</h3>
+} *@
+else
+{
+  <h3>Phone Number: @Html.DisplayFor(model => model.PhoneNumber)</h3>
+}
+
+<h3>Stylist: @Html.DisplayFor(model => model.Stylist.StylistName)</h3>
 <p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
 <p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
 <p>@Html.ActionLink("Back to list", "Index")</p>

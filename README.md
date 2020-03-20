@@ -59,8 +59,8 @@ _This program also makes use of SQL databases. We recommend using MySQL Workbenc
   >
     CREATE DATABASE tiffany_siu;
     USE tiffany_siu;
-    CREATE TABLE stylists (stylistId serial PRIMARY KEY, name VARCHAR(255), specialty VARCHAR(255));
-    CREATE TABLE clients (clientId serial PRIMARY KEY, phoneNumber VARCHAR(10), stylistId INT);
+    CREATE TABLE stylists (stylistId serial PRIMARY KEY, stylistName VARCHAR(255), specialty VARCHAR(255));
+    CREATE TABLE clients (clientId serial PRIMARY KEY, clientName VARCHAR(255), phoneNumber VARCHAR(10), stylistId INT);
 7. Run `dotnet restore` and `dotnet build` in command line interface of the repository's main project directory
 8. Run `dotnet run` to start up the program in the command line interface
 9. Type the URL listed under "Now listening on:" into a web browser to run

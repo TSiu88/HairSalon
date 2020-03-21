@@ -101,19 +101,19 @@ This application is able to search, edit, and delete objects and return the sear
 
 _Here is a snippet of what the homepage looks like:_
 
-<img src="./Hairsalon/img-readme/snippet1.png" alt="Homepage">
+<img src="./img-readme/snippet1.png" alt="Homepage">
 
 _Here is a preview of what the stylist list page looks like:_
 
-<img src="./Hairsalon/img-readme/snippet2.png" alt="Stylist List">
+<img src="./img-readme/snippet2.png" alt="Stylist List">
 
 _Here is a preview of what the stylist details look like:_
 
-<img src="./Hairsalon/wwwroot/img-readme/snippet3.png" alt="Stylist details">
+<img src="./img-readme/snippet3.png" alt="Stylist details">
 
 _Here is a preview of what the client list page looks like:_
 
-<img src="./Hairsalon/wwwroot/img-readme/snippet4.png" alt="Client list">
+<img src="./img-readme/snippet4.png" alt="Client list">
 
 ## Known Bugs
 
